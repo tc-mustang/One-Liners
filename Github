@@ -1,0 +1,4 @@
+# Commands to make sure that the ssh key will work
+
+##Add this to make the library available to you sra key
+git remote set-url origin git@github.com:tc-mustang/One-Liners.git

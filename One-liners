@@ -1,0 +1,10 @@
+# FASTA handling:
+
+##Change the fasta headers inside a multifasta to (in this case) ">changeme1, >changeme2...."
+awk '/^>/{print ">changeme_" ++i; next}{print}' < test
+
+
+# MISC:
+
+## Erase the header of a file and keep going until you find "  ". Then keep going until you hit line number -A
+grep -A500000 "##FASTA" genomeID18338.gff

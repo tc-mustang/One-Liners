@@ -2,3 +2,9 @@
 
 ##Add this to make the library available to you sra key
 git remote set-url origin git@github.com:tc-mustang/One-Liners.git
+
+##Add this on .bashrc to automate the ssh-agent upon restart
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
